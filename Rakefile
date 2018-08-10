@@ -236,7 +236,7 @@ if defined? JRUBY_VERSION
     end
 
     classpath = []
-    [ 'java.class.path', 'sun.boot.class.path' ].each do |key|
+    [ 'java.class.path' ].each do |key|
       classpath += ENV_JAVA[key].split(File::PATH_SEPARATOR).find_all { |jar| jar =~ /jruby/i }
     end
 
