@@ -38,7 +38,7 @@ Gem::Specification.new do |gem|
 
     # compilation .jar dependencies for extension (at least until `mvn') :
     gem.add_development_dependency 'jdbc-mysql', '~> 5.1.44'
-    gem.add_development_dependency 'jdbc-postgres', '~> 42.1'
+    gem.add_development_dependency 'jdbc-postgres', '~> 42.2'
   end
 
   gem.executables = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
